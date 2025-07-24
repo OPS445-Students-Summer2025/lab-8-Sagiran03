@@ -1,0 +1,40 @@
+
+PLAY [vmlab] *******************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [Update Apache (httpd) to latest version] *********************************
+ok: [vmlab]
+
+TASK [Install EPEL repository if not installed] ********************************
+ok: [vmlab]
+
+TASK [Remove tree package if installed] ****************************************
+changed: [vmlab]
+
+TASK [Set hostname to Seneca ID] ***********************************************
+ok: [vmlab]
+
+TASK [Create new user with sudo access] ****************************************
+ok: [vmlab]
+
+TASK [Create .ssh directory for new user] **************************************
+ok: [vmlab]
+
+TASK [Add SSH public key for new user] *****************************************
+ok: [vmlab]
+
+TASK [Create directory structure for labs] *************************************
+ok: [vmlab] => (item=1)
+ok: [vmlab] => (item=2)
+ok: [vmlab] => (item=3)
+ok: [vmlab] => (item=4)
+ok: [vmlab] => (item=5)
+ok: [vmlab] => (item=6)
+ok: [vmlab] => (item=7)
+ok: [vmlab] => (item=8)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=9    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
